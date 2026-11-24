@@ -1,0 +1,84 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+
+}
+
+.search {
+  background-color: var(--dark-color);
+  border-left: 1px solid var(--section-color);
+}
+
+.search svg {
+  color: var(--green-color);
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: #19283f;
+}
+
+.landing {
+  height: calc(100vh - 70px);
+  background-color: var(--dark-color);
+}
+
+.main-title::before {
+  height: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  content: "";
+  animation: linee;
+  animation-duration: 1s;
+  background-color: var(--green-color);
+  transform: translateX(-50%);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linee {
+  0% {
+    width: 0;
+
+  }
+
+  50% {
+    width: 15%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.icon {
+  color: var(--green-color);
+}
+
+.icon-holder {
+  height: 200px;
+}
+
+.number {
+  color: var(--section-color);
+  font-size: 12rem;
+}
+
+.number,
+.icon {
+  left: 50%;
+  transform: translateX(-50%);
+
+}
